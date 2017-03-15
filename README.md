@@ -1,1 +1,1 @@
-# git
+# Commande courante de GIT
