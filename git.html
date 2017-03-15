@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Rappel utilisation de git avec le terminal">
+    <meta name="author" content="ArtsKory">
+
+
+    <title>Commande courante de GIT</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Googlz font -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body { 
+            background-color: #272727;
+            font-family: 'Exo 2', sans-serif;}  
+        h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .blc {
+            margin-top: 0;
+            font-weight: normal;
+            color: #fff;
+        }
+        h1 { font-size: 40px;}
+        h2 { font-size: 30px;}
+        h3 { font-size: 20px;}
+        ul {padding-left: 20px;}
+        li {list-style: none;}
+        .code {color: #cc00cc;}
+        .comm {color: grey;}
+        .blog-post-title {
+            margin-bottom: 5px;
+            
+          }
+          .blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  
+  font-weight: normal;
+}
+.blog-post {
+  margin-bottom: 60px;
+}
+a {color: grey;text-decoration: none;}
+li>a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 13px;
+}
+li>a:hover {
+    border-left: 4px solid #cc00cc;
+    text-decoration: none;
+    color: grey;
+}
+a:hover {text-decoration: none;
+color: grey;}
+p>a {font-size: 24px;}
+ .baskerville { font-family: "Baskerville Old Face";}
+ img { width:120px; }
+    </style>
+  </head>
+
+  <body><div class="container">
+
+      <div class="blog-header">
+          <h1 id="commande" class="blog-title">Commande courante de <img src="https://git-scm.com/images/logos/downloads/Git-Logo-White.png"></h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+                <ul>
+                    <li><span class="code">cd +_nom_du_dossier/</span> <span class="comm">// pour se rendre dans un dossier ! => le "/" n'est pas obligatoire</span></li>
+                    <li><span class="code">cd ..</span> <span class="comm">// pour remonter d'un cran dans l'arborescence</span></li>
+                    <li><span class="code">cd ~</span> <span class="comm">// ~ = (alt + n pour apple ) pour revenir dans le dossier principal</span></li>
+                    <li><span class="code">pwd</span> <span class="comm">// pour afficher le fil d'Ariane</span></li>
+                    <li><span class="code">ls</span> <span class="comm">// pour voir la liste des fichiers et dossiers dans le dossier courant</span></li>
+                    <li><span class="code">mkdir +_nom_du_dossier</span> <span class="comm">// pour créer un nouveau dossier</span></li>
+                    <li><span class="code">touch  +_nom_du_fichier</span> <span class="comm">// pour créer un nouveau fichier</span></li>
+                    <li><span class="code">cat +_nom_du_fichier</span> <span class="comm">// permet d'afficher le contenu d'un fichier</span></li>
+                    <li><span class="code">git config --global user.name +_votre_nom</span> <span class="comm">// pour définir le nom utilisé pour github</span></li>
+                    <li><span class="code">git config --global user.email +_votre_email</span> <span class="comm">// pour définir l'email utilisé pour github</span></li>
+                    <li><span class="code">git init</span> <span class="comm">// permet d'initialiser le répertoire courant</span></li>
+                    <li><span class="code">git status</span> <span class="comm">// permet de savoir dans quel état git se trouve</span></li>
+                    <li><span class="code">git add +_nom_du_dossier_ou_nom_du_fichier</span> <span class="comm">// permet d'ajouter à l'index les fichiers et dossiers ainsi que le contenu des dossiers</span></li>
+                    <li><span class="code">git commit -m +_le_message</span> <span class="comm">// permet de commiter et d'ajouter un message du commit</span></li>
+                    <li><span class="code">git log</span> <span class="comm">// permet d'afficher l'historique des commits</span></li>
+                    <li><span class="code">git commit -am +_le_message</span> <span class="comm">// permet de mettre à jour les fichiers déjà existants dans son index</span></li>
+                    <li><span class="code">git checkout SHA_du_commit</span> <span class="comm">// permet de revenir au commit du SHA sélectionner</span></li>
+                    <li><span class="code">git checkout master</span> <span class="comm">// permet de revenir à la branche principale au commit le plus récent</span></li>
+                    <li><span class="code">git clone +_url_du_clone</span> <span class="comm">// permet de récupéré le clone du projet présent sur github</span></li>
+                    <li><span class="code">git push origin master</span> <span class="comm">// permet d'envoyer les modifications dans la branche master du remote origin</span></li>
+                    <li><span class="code">git pull origin master</span> <span class="comm">// permet de récupéré uniquement les fichiers modifiés</span></li>
+                    <li><span class="code">git branch</span> <span class="comm">// affiche la ou les branche du projet et permet de voir sur quelle branche on se trouve grâce à la petite étoile</span></li>
+                    <li><span class="code">git branch +_nom_de_la_nouvelle_branche</span> <span class="comm">// permet de créer une nouvelle branche dans le projet</span></li>
+                    <li><span class="code">git branche -d +_nom_de_la_branche</span> <span class="comm">// permet de supprimer la branche appeler</span></li>
+                    <li><span class="code">git checkout +_nom_de_la_branche</span> <span class="comm">// permet de rentrer dans la branche voulue</span></li>
+                    <li><span class="code">git checkout -b +nom_de_la_branche</span> <span class="comm">// permet de créer ET de rentrer dans la branche</span></li>
+                    <li><span class="code">git merge +_nom_de_la_branche</span> <span class="comm">// permet de fusionner les branches</span></li>
+                    <li><span class="code">git blame +_nom_du_fichier</span> <span class="comm">// permet de voir quels sont les auteurs de chaque ligne d'un fichier dans un projet</span></li>
+                    <li><span class="code">git show +_SHA_du_commit</span> <span class="comm">// permet de voir les différence dans le fichier</span></li>
+                    <li><span class="code">.gitignore</span> <span class="comm">// permet de créer une liste afin d'ignorer des fichiers</span></li>
+                    <li><span class="code">git stash</span> <span class="comm">// permet de sauvegarder temporairement en mémoire un fichier</span></li>
+                    <li><span class="code">git stash pop</span> <span class="comm">// permet de revenir sur le fichier sauvegarder temporairement</span></li>
+                    <li><span class="code">git stash apply</span> <span class="comm">// permet de garder les modifications du stash</span></li>
+                    <li><span class="code">SHIFT + Insert</span> <span class="comm">// sur windows permet de coller</span></li>
+                </ul>
+        </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+              <h2 id="editeur" class="blog-post-title">Editeur VIM</h2>
+            <ul>
+                <li><span class="code">vim +_nom_du_fichier</span> <span class="comm">// permet de rentrer dans le ficher et de l'éditer sans passer par un IDE</span></li>
+                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de :w </span> <span class="comm">// permet de sauvegarder</span></li>
+                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de :q </span> <span class="comm">// permet de quitter vim</span></li>
+                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de :x</span> <span class="comm">// permet de sauvegarder et de quitter vim en même temps</span></li>
+            </ul>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+              <h2 id="deroulement" class="blog-post-title">Déroulement d'un projet GIT</h2>
+              <h3 id="envoi" class="blog-post-title">Création et envoi d'un projet vers Github</h3>
+            <ul>
+                <li><span class="code">cd +_chemin_au_dossier</span></li>
+                <li><span class="code">mkdir +_nom_du_dossier</span></li>
+                <li><span class="code">cd +_nom_du_dossier_courant</span></li>
+                <li><span class="code">git init</span></li>
+                <li><span class="code">git add +_noms_des_fichier_et_dossiers</span></li>
+                <li><span class="code">git commit -m "+_message_du_commit_le_plus_détailler"</span></li>
+                <li><span class="code">git push origin master</span></li>
+            </ul>
+              <h3 id="clone" class="blog-post-title">Clone d'un projet</h3>
+            <ul>
+                <li><span class="code">cd +_chemin_au_dossier</span></li>
+                <li><span class="code">git clone +_url_du_clone</span></li>  
+            </ul>
+              <h3 id="maj" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
+            <ul>
+                <li><span class="code">cd +_chemin_au_dossier</span></li>
+                <li><span class="code">git pull origin master</span></li>
+            </ul>
+            <h3 id="maj2" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
+            <ul>
+                <li><span class="code">cd +_chemin_au_dossier</span></li>
+                <li><span class="code">git commit -am "+_message_du_commit_le_plus_détailler"</span></li>
+                <li><span class="code">git push origin master</span></li>
+            </ul>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+            <h4>Raccourci</h4>
+            <ul class="list-unstyled">
+              <li><a href="#commande">Commande courante de GIT</a></li>
+              <li><a href="#editeur">Editeur VIM</a></li>
+              <li><a href="#deroulement">Déroulement d'un projet GIT</a></li>
+              <li><a href="#envoi">Création et envoi d'un projet vers Github</a></li>
+              <li><a href="#clone">Clone d'un projet</a></li>
+              <li><a href="#maj">Mise à jour d'un projet depuis github</a></li>
+              <li><a href="#maj2">Mise à jour d'un projet depuis github</a></li>
+            </ul>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p class="text-center"><a href="http://artskory.fr/">ArtsKory</a></p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
