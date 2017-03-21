@@ -14,7 +14,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Googlz font -->
+        <!-- Google font -->
         <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -169,7 +169,6 @@
                 color: #fff
             }
         </style>
-
     </head>
 
     <body id="top">
@@ -200,134 +199,135 @@
                             <li><span class="code">git add </span> <span class="cyan">+_nom_du_dossier_ou_nom_du_fichier</span> <span class="comm">// permet d'ajouter à l'index les fichiers et dossiers ainsi que le contenu des dossiers</span></li>
                             <li><span class="code">git commit -m </span><span class="yellow">"</span><span class="cyan">+_le_message</span><span class="code"></span><span class="yellow">"</span> <span class="comm">// permet de commiter et d'ajouter un message au commit</span></li>
                             <li><span class="code">git commit -am <span class="yellow">"</span> <span class="cyan">+_le_message</span><span class="code"><span class="yellow">"</span> <span class="comm">// permet de mettre à jour les fichiers déjà existants dans son index</span></li>
-                                        <li><span class="code">git log</span> <span class="comm">// permet d'afficher l'historique des commits, q pour quitter log</span></li>
-                                        <li><span class="code">git checkout SHA_du_commit</span> <span class="comm">// permet de revenir au commit du SHA sélectionner</span></li>
-                                        <li><span class="code">git checkout master</span> <span class="comm">// permet de revenir à la branche principale au commit le plus récent</span></li>
-                                        <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span> <span class="comm">// permet de récupéré le clone du projet présent sur github</span></li>
-                                        <li><span class="code">git push origin master</span> <span class="comm">// permet d'envoyer les modifications dans la branche master du remote origin</span></li>
-                                        <li><span class="code">git pull origin master</span> <span class="comm">// permet de récupéré uniquement les fichiers modifiés</span></li>
-                                        <li><span class="code">git branch</span> <span class="comm">// affiche la ou les branches du projet et permet de voir sur quelle branche on se trouve grâce à la petite étoile</span></li>
-                                        <li><span class="code">git branch </span> <span class="cyan">+_nom_de_la_nouvelle_branche</span> <span class="comm">// permet de créer une nouvelle branche dans le projet</span></li>
-                                        <li><span class="code">git branche -d </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de supprimer la branche appeler</span></li>
-                                        <li><span class="code">git checkout </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de rentrer dans la branche voulue</span></li>
-                                        <li><span class="code">git checkout -b </span> <span class="cyan">+nom_de_la_branche</span> <span class="comm">// permet de créer <u>ET</u> de rentrer dans la branche</span></li>
-                                        <li><span class="code">git merge </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de fusionner les branches</span></li>
-                                        <li><span class="code">git blame </span> <span class="cyan">+_nom_du_fichier</span> <span class="comm">// permet de voir quels sont les auteurs de chaque ligne d'un fichier dans un projet</span></li>
-                                        <li><span class="code">git show </span> <span class="cyan">+_SHA_du_commit</span> <span class="comm">// permet de voir les différence dans le fichier</span></li>
-                                        <li><span class="code">.gitignore</span> <span class="comm">// permet de créer une liste afin d'ignorer des fichiers</span></li>
-                                        <li><span class="code">git stash</span> <span class="comm">// permet de sauvegarder temporairement en mémoire un fichier</span></li>
-                                        <li><span class="code">git stash pop</span> <span class="comm">// permet de revenir sur le fichier sauvegarder temporairement</span></li>
-                                        <li><span class="code">git stash apply</span> <span class="comm">// permet de garder les modifications du stash</span></li>
-                                        <li><span class="code">SHIFT + Insert</span> <span class="comm">// sur windows permet de coller, <u>cmd ⌘ + v pour apple</u></span></li>
-                                        </ul>
-                                        </div><!-- /.blog-post -->
+                            <li><span class="code">git log</span> <span class="comm">// permet d'afficher l'historique des commits, q pour quitter log</span></li>
+                            <li><span class="code">git checkout SHA_du_commit</span> <span class="comm">// permet de revenir au commit du SHA sélectionner</span></li>
+                            <li><span class="code">git checkout master</span> <span class="comm">// permet de revenir à la branche principale au commit le plus récent</span></li>
+                            <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span> <span class="comm">// permet de récupéré le clone du projet présent sur github</span></li>
+                            <li><span class="code">git push origin master</span> <span class="comm">// permet d'envoyer les modifications dans la branche master du remote origin</span></li>
+                            <li><span class="code">git pull origin master</span> <span class="comm">// permet de récupéré uniquement les fichiers modifiés</span></li>
+                            <li><span class="code">git branch</span> <span class="comm">// affiche la ou les branches du projet et permet de voir sur quelle branche on se trouve grâce à la petite étoile</span></li>
+                            <li><span class="code">git branch </span> <span class="cyan">+_nom_de_la_nouvelle_branche</span> <span class="comm">// permet de créer une nouvelle branche dans le projet</span></li>
+                            <li><span class="code">git branche -d </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de supprimer la branche appeler</span></li>
+                            <li><span class="code">git checkout </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de rentrer dans la branche voulue</span></li>
+                            <li><span class="code">git checkout -b </span> <span class="cyan">+nom_de_la_branche</span> <span class="comm">// permet de créer <u>ET</u> de rentrer dans la branche</span></li>
+                            <li><span class="code">git merge </span> <span class="cyan">+_nom_de_la_branche</span> <span class="comm">// permet de fusionner les branches</span></li>
+                            <li><span class="code">git blame </span> <span class="cyan">+_nom_du_fichier</span> <span class="comm">// permet de voir quels sont les auteurs de chaque ligne d'un fichier dans un projet</span></li>
+                            <li><span class="code">git show </span> <span class="cyan">+_SHA_du_commit</span> <span class="comm">// permet de voir les différence dans le fichier</span></li>
+                            <li><span class="code">.gitignore</span> <span class="comm">// permet de créer une liste afin d'ignorer des fichiers</span></li>
+                            <li><span class="code">git stash</span> <span class="comm">// permet de sauvegarder temporairement en mémoire un fichier</span></li>
+                            <li><span class="code">git stash pop</span> <span class="comm">// permet de revenir sur le fichier sauvegarder temporairement</span></li>
+                            <li><span class="code">git stash apply</span> <span class="comm">// permet de garder les modifications du stash</span></li>
+                            <li><span class="code">SHIFT + Insert</span> <span class="comm">// sur windows permet de coller, <u>cmd ⌘ + v pour apple</u></span></li>
+                        </ul>
+                    </div><!-- /.blog-post -->
 
-                                        <div class="blog-post">
-                                            <h2 id="editeur" class="blog-post-title">Editeur VIM</h2>
-                                            <ul>
-                                                <li><span class="code">vim </span> <span class="cyan">+_nom_du_fichier</span> <span class="comm">// permet de rentrer dans le ficher et de l'éditer sans passer par un IDE</span></li>
-                                                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:w </span> <span class="comm">// permet de sauvegarder</span></li>
-                                                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:q </span> <span class="comm">// permet de quitter vim</span></li>
-                                                <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:x</span> <span class="comm">// permet de sauvegarder et de quitter vim en même temps</span></li>
-                                            </ul>
-                                        </div><!-- /.blog-post -->
+                    <div class="blog-post">
+                        <h2 id="editeur" class="blog-post-title">Editeur VIM</h2>
+                        <ul>
+                            <li><span class="code">vim </span> <span class="cyan">+_nom_du_fichier</span> <span class="comm">// permet de rentrer dans le ficher et de l'éditer sans passer par un IDE</span></li>
+                            <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:w </span> <span class="comm">// permet de sauvegarder</span></li>
+                            <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:q </span> <span class="comm">// permet de quitter vim</span></li>
+                            <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:x</span> <span class="comm">// permet de sauvegarder et de quitter vim en même temps</span></li>
+                        </ul>
+                    </div><!-- /.blog-post -->
 
-                                        <div class="blog-post">
-                                            <h2 id="deroulement" class="blog-post-title">Scénario d'un projet GIT</h2>
-                                            <h3 id="envoi" class="blog-post-title">Création et envoi d'un projet vers Github</h3>
-                                            <ul class="blog-post">
-                                                <li><span class="comm">Création d'un repository sur github et copie du lien du clone</span></li>
-                                                <li><span class="code">cd </span> <span class="cyan">+_chemin_au_fichier</span></li>
-                                                <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span></li>
-                                                <li><span class="code">git add </span> <span class="cyan">+_noms_des_fichier_et_dossiers</span></li>
-                                                <li><span class="code">git commit -m <span class="yellow">"</span> <span class="cyan">+_message_du_commit_le_plus_détailler</span><span class="code"><span class="yellow">"</span></li>
-                                                            <li><span class="code">git push origin master</span></li>
-                                                            </ul>
-                                                            <h3 id="clone" class="blog-post-title">Clone d'un projet</h3>
-                                                            <ul class="blog-post">
-                                                                <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
-                                                                <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span></li>
-                                                            </ul>
-                                                            <h3 id="maj" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
-                                                            <ul class="blog-post">
-                                                                <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
-                                                                <li><span class="code">git pull origin master</span></li>
-                                                            </ul>
-                                                            <h3 id="maj2" class="blog-post-title">Mise à jour d'un projet vers github</h3>
-                                                            <ul class="blog-post">
-                                                                <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
-                                                                <li><span class="code">git commit -am <span class="yellow">"</span> <span class="cyan">+_message_du_commit_le_plus_détailler</span><span class="code"><span class="yellow">"</span></li>
-                                                                            <li><span class="code">git push origin master</span></li>
-                                                                            </ul>
-                                                                            </div><!-- /.blog-post -->
+                    <div class="blog-post">
+                        <h2 id="deroulement" class="blog-post-title">Scénario d'un projet GIT</h2>
+                        <h3 id="envoi" class="blog-post-title">Création et envoi d'un projet vers Github</h3>
+                        <ul class="blog-post">
+                            <li><span class="comm">Création d'un repository sur github et copie du lien du clone</span></li>
+                            <li><span class="code">cd </span> <span class="cyan">+_chemin_au_fichier</span></li>
+                            <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span></li>
+                            <li><span class="code">git add </span> <span class="cyan">+_noms_des_fichier_et_dossiers</span></li>
+                            <li><span class="code">git commit -m <span class="yellow">"</span> <span class="cyan">+_message_du_commit_le_plus_détailler</span><span class="code"><span class="yellow">"</span></li>
+                            <li><span class="code">git push origin master</span></li>
+                        </ul>
+                        <h3 id="clone" class="blog-post-title">Clone d'un projet</h3>
+                        <ul class="blog-post">
+                            <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
+                            <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span></li>
+                        </ul>
+                        <h3 id="maj" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
+                        <ul class="blog-post">
+                            <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
+                            <li><span class="code">git pull origin master</span></li>
+                        </ul>
+                        <h3 id="maj2" class="blog-post-title">Mise à jour d'un projet vers github</h3>
+                        <ul class="blog-post">
+                            <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
+                            <li><span class="code">git commit -am <span class="yellow">"</span> <span class="cyan">+_message_du_commit_le_plus_détailler</span><span class="code"><span class="yellow">"</span></li>
+                            <li><span class="code">git push origin master</span></li>
+                        </ul>
+                    </div><!-- /.blog-post -->
 
-                                                                            </div><!-- /.blog-main -->
+                </div><!-- /.blog-main -->
 
-                                                                            <div class="col-sm-3 col-sm-offset-1 blog-sidebar sidebar">
-                                                                                <div class="sidebar-module sidebar-fixed">
-                                                                                    <h4>Shortcut <img class="down-logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ1LjgxOCA0NS44MTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1LjgxOCA0NS44MTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDQuOTI2LDMzLjcyM2gtMi44MzR2LTcuMjg1YzAtMS4xODUtMC44NzctMi4xNDEtMi4wNjItMi4xNDFoLTEuODAxYy0xLjE4NywwLTIuMTYyLDAuOTU2LTIuMTYyLDIuMTQxdjcuMjg1aC0yLjczMyAgICBjLTAuMzYsMC0wLjY4NywwLjIxNS0wLjgyNSwwLjU0OWMtMC4xMzgsMC4zMzQtMC4wNjEsMC43MTcsMC4xOTQsMC45NzFsNS43OTcsNS43OTVjMC4zNDksMC4zNSwwLjkxMywwLjM1LDEuMjYxLDBsNS43OTctNS43OTMgICAgYzAuMjU2LTAuMjU2LDAuMzMyLTAuNjM3LDAuMTkzLTAuOTczQzQ1LjYxMSwzMy45MzksNDUuMjg2LDMzLjcyMyw0NC45MjYsMzMuNzIzeiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxjaXJjbGUgY3g9IjguODM5IiBjeT0iMTUuMjc4IiByPSIzLjY0IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM4LjAxNiwxMi40aDMuODE3YzIuMjAxLDAsMy45ODQtMS43NCwzLjk4NC0zLjk0YzAtMi4yLTEuNzg0LTMuOTQtMy45ODQtMy45NGgtMy44MTdjLTQuMTI3LDAtNi40NjUsMS43NzgtNy43MDcsMy4yNTcgICAgbC0xNy44ODMsMjEuMDR2LTYuMjU5YzAtMS4yMTgtMS4wNDQtMi4yNzgtMi4yNjMtMi4yNzhINy41MTVjLTEuMjE5LDAtMi4xOTgsMS4wNi0yLjE5OCwyLjI3OHYxMC44NTZIMy45ODQgICAgYy0yLjIsMC0zLjk4NCwxLjc0LTMuOTg0LDMuOTM5YzAsMi4yLDEuNzg0LDMuOTQsMy45ODQsMy45NGgzLjg0N2MyLjc4MSwwLDUuNjA2LTEuNDU5LDcuNzM2LTMuOTk2bDIwLjgtMjQuNDM3ICAgIEMzNi42ODksMTIuNDc4LDM3LjUzOCwxMi40LDM4LjAxNiwxMi40eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /></h4>
-                                                                                    <ul class="list-unstyled">
-                                                                                        <li><a class="js-scrollTo" href="#commande">Commande courante de GIT</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#editeur">Editeur VIM</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#deroulement">Scénario d'un projet GIT</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#envoi">Création et envoi d'un projet vers Github</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#clone">Clone d'un projet</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#maj">Mise à jour d'un projet depuis github</a></li>
-                                                                                        <li><a class="js-scrollTo" href="#maj2">Mise à jour d'un projet vers github</a></li>
-                                                                                    </ul>
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar sidebar">
+                    <div class="sidebar-module sidebar-fixed">
+                        <h4>Shortcut <img class="down-logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDQ1LjgxOCA0NS44MTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1LjgxOCA0NS44MTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDQuOTI2LDMzLjcyM2gtMi44MzR2LTcuMjg1YzAtMS4xODUtMC44NzctMi4xNDEtMi4wNjItMi4xNDFoLTEuODAxYy0xLjE4NywwLTIuMTYyLDAuOTU2LTIuMTYyLDIuMTQxdjcuMjg1aC0yLjczMyAgICBjLTAuMzYsMC0wLjY4NywwLjIxNS0wLjgyNSwwLjU0OWMtMC4xMzgsMC4zMzQtMC4wNjEsMC43MTcsMC4xOTQsMC45NzFsNS43OTcsNS43OTVjMC4zNDksMC4zNSwwLjkxMywwLjM1LDEuMjYxLDBsNS43OTctNS43OTMgICAgYzAuMjU2LTAuMjU2LDAuMzMyLTAuNjM3LDAuMTkzLTAuOTczQzQ1LjYxMSwzMy45MzksNDUuMjg2LDMzLjcyMyw0NC45MjYsMzMuNzIzeiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTxjaXJjbGUgY3g9IjguODM5IiBjeT0iMTUuMjc4IiByPSIzLjY0IiBmaWxsPSIjRkZGRkZGIi8+CgkJPHBhdGggZD0iTTM4LjAxNiwxMi40aDMuODE3YzIuMjAxLDAsMy45ODQtMS43NCwzLjk4NC0zLjk0YzAtMi4yLTEuNzg0LTMuOTQtMy45ODQtMy45NGgtMy44MTdjLTQuMTI3LDAtNi40NjUsMS43NzgtNy43MDcsMy4yNTcgICAgbC0xNy44ODMsMjEuMDR2LTYuMjU5YzAtMS4yMTgtMS4wNDQtMi4yNzgtMi4yNjMtMi4yNzhINy41MTVjLTEuMjE5LDAtMi4xOTgsMS4wNi0yLjE5OCwyLjI3OHYxMC44NTZIMy45ODQgICAgYy0yLjIsMC0zLjk4NCwxLjc0LTMuOTg0LDMuOTM5YzAsMi4yLDEuNzg0LDMuOTQsMy45ODQsMy45NGgzLjg0N2MyLjc4MSwwLDUuNjA2LTEuNDU5LDcuNzM2LTMuOTk2bDIwLjgtMjQuNDM3ICAgIEMzNi42ODksMTIuNDc4LDM3LjUzOCwxMi40LDM4LjAxNiwxMi40eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                        </h4>
+                        <ul class="list-unstyled">
+                            <li><a class="js-scrollTo" href="#commande">Commande courante de GIT</a></li>
+                            <li><a class="js-scrollTo" href="#editeur">Editeur VIM</a></li>
+                            <li><a class="js-scrollTo" href="#deroulement">Scénario d'un projet GIT</a></li>
+                            <li><a class="js-scrollTo" href="#envoi">Création et envoi d'un projet vers Github</a></li>
+                            <li><a class="js-scrollTo" href="#clone">Clone d'un projet</a></li>
+                            <li><a class="js-scrollTo" href="#maj">Mise à jour d'un projet depuis github</a></li>
+                            <li><a class="js-scrollTo" href="#maj2">Mise à jour d'un projet vers github</a></li>
+                        </ul>
 
-                                                                                    <h5 class="slide-up">
-                                                                                        <a class="blc up" href="#top" onclick="scrollToTop();return false">
-                                                                                            <img class="up-logo" alt="back to top" title="back to top" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik00MjYuNjY3LDI3Ny4zMzNDNDczLjcyOCwyNzcuMzMzLDUxMiwyMzkuMDYxLDUxMiwxOTJzLTM4LjI3Mi04NS4zMzMtODUuMzMzLTg1LjMzM2gtODUuMzMzICAgICBjLTYuMzc5LDAtMTIuNDE2LDIuODU5LTE2LjQ0OCw3Ljc2NWwtNDcuNTUyLDU3LjcyOHYtMjIuODI3YzAtMTYuNDQ4LTYuNDIxLTMxLjMxNy0xNi42NC00Mi42NjcgICAgIGMxMC4yMTktMTEuMzQ5LDE2LjY0LTI2LjIxOSwxNi42NC00Mi42NjdjMC0zNS4yODUtMjguNzE1LTY0LTY0LTY0cy02NCwyOC43MTUtNjQsNjRjMCwxNi40NDgsNi40MjEsMzEuMzE3LDE2LjY0LDQyLjY2NyAgICAgYy0xMC4yMTksMTEuMzQ5LTE2LjY0LDI2LjIxOS0xNi42NCw0Mi42Njd2MTc4LjI2MWwtMTEuMzA3LDEzLjczOUg4NS4zMzNDMzguMjcyLDM0MS4zMzMsMCwzNzkuNjA1LDAsNDI2LjY2NyAgICAgUzM4LjI3Miw1MTIsODUuMzMzLDUxMmgxMjhjNi40MjEsMCwxMi41MDEtMi45MDEsMTYuNTU1LTcuODkzbDE4NC4yNTYtMjI2Ljc3M0g0MjYuNjY3eiBNMjM0LjY2NywyMjMuOTU3TDE5MiwyNzUuNzc2VjE0OS4zMzMgICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM1YyMjMuOTU3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCQk8cGF0aCBkPSJNNDQxLjc2OSwzNDcuNjAxYy0xLjk2My0xLjk4NC00LjMzMS0zLjU0MS02Ljk1NS00LjYyOWMtNS4yMDUtMi4xNTUtMTEuMDkzLTIuMTU1LTE2LjI5OSwwICAgICBjLTIuNjI0LDEuMDg4LTQuOTcxLDIuNjQ1LTYuOTU1LDQuNjI5bC00Mi42NDUsNDIuNjQ1Yy04LjM0MSw4LjM0MS04LjM0MSwyMS44NDUsMCwzMC4xNjVjOC4zNDEsOC4zNDEsMjEuODQ1LDguMzQxLDMwLjE2NSwwICAgICBsNi4yNTEtNi4yNTF2NzYuNTAxYzAsMTEuNzc2LDkuNTM2LDIxLjMzMywyMS4zMzMsMjEuMzMzczIxLjMzMy05LjU1NywyMS4zMzMtMjEuMzMzdi03Ni41MDFsNi4yNTEsNi4yNTEgICAgIGM0LjE2LDQuMTgxLDkuNjIxLDYuMjUxLDE1LjA4Myw2LjI1MWM1LjQ2MSwwLDEwLjkyMy0yLjA2OSwxNS4wODMtNi4yNTFjOC4zNDEtOC4zMiw4LjM0MS0yMS44MjQsMC0zMC4xNjVMNDQxLjc2OSwzNDcuNjAxeiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a>
-                                                                                    </h5>
-                                                                                </div>
-                                                                            </div><!-- /.blog-sidebar -->
+                        <h5 class="slide-up">
+                            <a class="blc up" href="#top" onclick="scrollToTop();return false">
+                                <img class="up-logo" alt="back to top" title="back to top" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPGc+CgkJPGc+CgkJCTxwYXRoIGQ9Ik00MjYuNjY3LDI3Ny4zMzNDNDczLjcyOCwyNzcuMzMzLDUxMiwyMzkuMDYxLDUxMiwxOTJzLTM4LjI3Mi04NS4zMzMtODUuMzMzLTg1LjMzM2gtODUuMzMzICAgICBjLTYuMzc5LDAtMTIuNDE2LDIuODU5LTE2LjQ0OCw3Ljc2NWwtNDcuNTUyLDU3LjcyOHYtMjIuODI3YzAtMTYuNDQ4LTYuNDIxLTMxLjMxNy0xNi42NC00Mi42NjcgICAgIGMxMC4yMTktMTEuMzQ5LDE2LjY0LTI2LjIxOSwxNi42NC00Mi42NjdjMC0zNS4yODUtMjguNzE1LTY0LTY0LTY0cy02NCwyOC43MTUtNjQsNjRjMCwxNi40NDgsNi40MjEsMzEuMzE3LDE2LjY0LDQyLjY2NyAgICAgYy0xMC4yMTksMTEuMzQ5LTE2LjY0LDI2LjIxOS0xNi42NCw0Mi42Njd2MTc4LjI2MWwtMTEuMzA3LDEzLjczOUg4NS4zMzNDMzguMjcyLDM0MS4zMzMsMCwzNzkuNjA1LDAsNDI2LjY2NyAgICAgUzM4LjI3Miw1MTIsODUuMzMzLDUxMmgxMjhjNi40MjEsMCwxMi41MDEtMi45MDEsMTYuNTU1LTcuODkzbDE4NC4yNTYtMjI2Ljc3M0g0MjYuNjY3eiBNMjM0LjY2NywyMjMuOTU3TDE5MiwyNzUuNzc2VjE0OS4zMzMgICAgIGMwLTExLjc1NSw5LjU1Ny0yMS4zMzMsMjEuMzMzLTIxLjMzM3MyMS4zMzMsOS41NzksMjEuMzMzLDIxLjMzM1YyMjMuOTU3eiIgZmlsbD0iI0ZGRkZGRiIvPgoJCQk8cGF0aCBkPSJNNDQxLjc2OSwzNDcuNjAxYy0xLjk2My0xLjk4NC00LjMzMS0zLjU0MS02Ljk1NS00LjYyOWMtNS4yMDUtMi4xNTUtMTEuMDkzLTIuMTU1LTE2LjI5OSwwICAgICBjLTIuNjI0LDEuMDg4LTQuOTcxLDIuNjQ1LTYuOTU1LDQuNjI5bC00Mi42NDUsNDIuNjQ1Yy04LjM0MSw4LjM0MS04LjM0MSwyMS44NDUsMCwzMC4xNjVjOC4zNDEsOC4zNDEsMjEuODQ1LDguMzQxLDMwLjE2NSwwICAgICBsNi4yNTEtNi4yNTF2NzYuNTAxYzAsMTEuNzc2LDkuNTM2LDIxLjMzMywyMS4zMzMsMjEuMzMzczIxLjMzMy05LjU1NywyMS4zMzMtMjEuMzMzdi03Ni41MDFsNi4yNTEsNi4yNTEgICAgIGM0LjE2LDQuMTgxLDkuNjIxLDYuMjUxLDE1LjA4Myw2LjI1MWM1LjQ2MSwwLDEwLjkyMy0yLjA2OSwxNS4wODMtNi4yNTFjOC4zNDEtOC4zMiw4LjM0MS0yMS44MjQsMC0zMC4xNjVMNDQxLjc2OSwzNDcuNjAxeiIgZmlsbD0iI0ZGRkZGRiIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                            </a>
+                        </h5>
+                    </div>
+                </div><!-- /.blog-sidebar -->
 
-                                                                            </div><!-- /.row -->
+            </div><!-- /.row -->
 
-                                                                            <div class="row">
-                                                                                <div class="col-sm-12">
-                                                                                    <footer class="blog-footer">
-                                                                                        <p class="text-center">
-                                                                                            <a href="http://artskory.fr/" target="_blank">
-                                                                                                <img class="logo" alt="logo artskory" src="http://artskory.fr/images/logo-artskory-old.svg" title="logo artskory">
-                                                                                            </a>
-                                                                                        </p>
-                                                                                    </footer><!-- /.footer -->
-                                                                                </div>
-                                                                            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <footer class="blog-footer">
+                        <p class="text-center">
+                            <a href="http://artskory.fr/" target="_blank">
+                                <img class="logo" alt="logo artskory" src="http://artskory.fr/images/logo-artskory-old.svg" title="logo artskory">
+                            </a>
+                        </p>
+                    </footer><!-- /.footer -->
+                </div>
+            </div><!-- /.row -->
 
+        </div><!-- /.container -->
 
-                                                                            </div><!-- /.container -->
-
-                                                                            <!-- Bootstrap core JavaScript
-                                                                            ================================================== -->
-                                                                            <!-- Placed at the end of the document so the pages load faster -->
-                                                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                                                                            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-                                                                            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-                                                                            <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-                                                                            <!-- Smooth scroll -->
-                                                                            <script>
-                                                                                            $(document).ready(function() {
-                                                                                                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-                                                                                                    var page = $(this).attr('href'); // Page cible
-                                                                                                    var speed = 750; // Durée de l'animation (en ms)
-                                                                                                    $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
-                                                                                                    return false;
-                                                                                                });
-                                                                                            });
-                                                                            </script>
-                                                                            <!-- Smooth scroll top-->
-                                                                            <script>
-                                                                                var timeOut;
-                                                                                function scrollToTop() {
-                                                                                    if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-                                                                                        window.scrollBy(0, -50);
-                                                                                        timeOut = setTimeout('scrollToTop()', 10);
-                                                                                    } else
-                                                                                        clearTimeout(timeOut);
-                                                                                }
-                                                                            </script>
-                                                                            </body>
-                                                                            </html>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!-- Smooth scroll -->
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 750; // Durée de l'animation (en ms)
+                    $('html, body').animate({scrollTop: $(page).offset().top}, speed); // Go
+                    return false;
+                });
+            });
+        </script>
+        <!-- Smooth scroll top-->
+        <script>
+            var timeOut;
+            function scrollToTop() {
+                if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+                    window.scrollBy(0, -50);
+                    timeOut = setTimeout('scrollToTop()', 10);
+                } else
+                    clearTimeout(timeOut);
+            }
+        </script>
+    </body>
+</html>
