@@ -91,6 +91,9 @@
             .blog-post {
                 margin-bottom: 60px;
             }
+            .blog-post-envoi {
+                margin-bottom: 30px;
+            }
             .blog-post-title {
                 margin-bottom: 5px;
             }
@@ -243,14 +246,20 @@
                     <div class="blog-post">
                         <h2 id="deroulement" class="blog-post-title">Scénario d'un projet GIT</h2>
                         <h3 id="envoi" class="blog-post-title">Création et envoi d'un projet vers Github</h3>
+                        <ul class="blog-post-envoi">
+                            <li><span class="comm">Création en amont d'un repository sur github.com</span></li>
+                            <li><span class="code">git init</span></li>
+                            <li><span class="code">git commit -m </span><span class="yellow">"</span><span class="cyan">+_le_message</span><span class="code"></span><span class="yellow">"</span></li>
+                            <li><span class="code">git remote add origin https://github.com/<span class="cyan">+_nom_du_profile</span>/<span class="cyan">+_nom_du_repository</span>.git</span></li>
+                            <li><span class="code">git push -u origin master</span></li>
+                        </ul>
                         <ul class="blog-post">
-                            <li><span class="comm">Création d'un repository sur github et copie du code contenu dans "...or create a new repository on the command line" page suivante</span></li>
-                            <li><span class="blc">[SHIFT]</span> <span class="code">+</span> <span class="blc">[ECHAP]</span></li>
-                            <li><span class="code">git push origin master</span></li>
+                            <li><span class="comm">Depuis un projet existant</span></li>
+                            <li><span class="code">git remote add origin https://github.com/<span class="cyan">+_nom_du_profile</span>/<span class="cyan">+_nom_du_repository</span>.git</span></li>
+                            <li><span class="code">git push -u origin master</span></li>
                         </ul>
                         <h3 id="clone" class="blog-post-title">Clone d'un projet</h3>
                         <ul class="blog-post">
-                            <li><span class="code">cd </span> <span class="cyan">+_chemin_au_dossier</span></li>
                             <li><span class="code">git clone </span> <span class="cyan">+_url_du_clone</span></li>
                         </ul>
                         <h3 id="maj" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
