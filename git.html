@@ -8,177 +8,19 @@
         <meta name="description" content="Rappel utilisation de git avec le terminal">
         <meta name="author" content="ArtsKory">
 
-
         <title>Commande courante de GIT</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-        <!-- Google font -->
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+        <!-- Style -->
+        <link rel="stylesheet" href="css/style.min.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
-        <!-- Style css -->
-        <style>
-            /* Body */
-            body {
-                background-color: #272822;
-                font-family: 'Exo 2', sans-serif;
-                font-size: 16px;
-            }
-            h1, h2, h3, .blc, .shortcut {
-                margin-top: 0;
-                font-weight: normal;
-                color: #fff;
-            }
-            h1 {
-                font-size: 40px;
-            }
-            h2 {
-                font-size: 30px;
-            }
-            h3 {
-                font-size: 20px;
-            }
-            a {
-                color: #90908a;
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: none;
-                color: grey;
-            }
-            a:focus {
-                color: #90908a;
-                text-decoration: none;
-            }
-            ul {
-                padding-left: 20px;
-            }
-            li {
-                list-style: none;
-            }
-            li>a {
-                display: block;
-                padding: 4px 20px;
-                font-size: 13px;
-                font-weight: 500;
-            }
-            li>a:hover {
-                padding-left: 16px;
-                text-decoration: none;
-                background-color: transparent;
-                border-left: 4px solid #ae81fb;
-                color: #90908a;
-            }
-            p>a {
-                font-size: 24px;
-            }
-            .blog-header {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            .blog-title {
-                margin-top: 30px;
-                margin-bottom: 0;
-                font-weight: normal;
-            }
-            .blog-post {
-                margin-bottom: 60px;
-            }
-            .blog-post-envoi {
-                margin-bottom: 30px;
-            }
-            .blog-post-title {
-                margin-bottom: 5px;
-            }
-            .stream {
-                float: left;
-            }
-            .sidebar {
-                float: left;
-            }
-            .sidebar-fixed {
-                position: fixed;
-            }
-            /* Coloration syntaxique */
-            .code {
-                color: #ae81fb;
-            }
-            .comm {
-                color: #90908a;
-            }
-            .cyan {
-                color: #58cfef;
-            }
-            .magenta {
-                color: #e42666;
-            }
-            .yellow {
-                color: #e6db74;
-            }
-            /* Logos */
-            .git-logo {
-                width:120px;
-            }
-            .logo {
-                width:80px;
-            }
-            .os-logo {
-                width: 16px;
-                fill: red;
-            }
-            .up-logo {
-                width: 48px;
-            }
-            .up:hover {
-                -webkit-transition: left 0.4s ease-in-out;
-                -o-transition: left 0.4s ease-in-out;
-                -moz-transition: left 0.4s ease-in-out;
-                transition: left 0.4s ease-in-out;
-            }
-            /* Down-logo */
-            .down-logo {
-                width: 32px;
-            }
-            .slide-up img {
-                -webkit-transition: all 0.4s;
-                -o-transition: all 0.4s;
-                -moz-transition: all 0.4s;
-                transition: all 0.4s;
-            }
-            .slide-up img:hover {
-                -webkit-transform: translateY(-10px);
-                -o-transition: translateY(-10px);
-                -moz-transition: translateY(-10px);
-                transform: translateY(-10px);
-            }
-            .shortcut {
-                font-size: 1.5rem;
-            }
-            /* Selection */
-            ::-webkit-selection {
-                background: #ae81fb;
-                color: #fff
-            }
-            ::-o-selection {
-                background: #ae81fb;
-                color: #fff
-            }
-            ::-moz-selection {
-                background: #ae81fb;
-                color: #fff
-            }
-            ::selection {
-                background: #ae81fb;
-                color: #fff
-            }
-        </style>
     </head>
 
     <body id="top">
@@ -195,56 +37,54 @@
                     <div class="blog-post">
                         <h2>Commande base terminal</h2>
                         <ul>
-                            <li><span class="code">cd </span> <span class="cyan">nom_du_dossier</span> <span class="comm"> // pour se rendre dans un dossier</span></li>
+                            <li><span class="code">cd </span> <span class="name">nom_du_dossier</span> <span class="comm"> // pour se rendre dans un dossier</span></li>
                             <li><span class="code">cd ..</span> <span class="comm"> // pour remonter d'un cran dans l'arborescence</span></li>
-                            <li><span class="code">cd ~</span> <span class="comm"> // pour revenir dans le dossier principal, <u>~ = alt + n pour <img class="os-logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzk1Ljc0OCwyNzIuMDQ2Yy0wLjY0Ni02NC44NDEsNTIuODgtOTUuOTM4LDU1LjI3MS05Ny40ODNjLTMwLjA3NS00NC4wMS03Ni45MjUtNTAuMDM5LTkzLjYyLTUwLjczNiAgIGMtMzkuODcxLTQuMDM3LTc3Ljc5OCwyMy40NzQtOTguMDMzLDIzLjQ3NGMtMjAuMTg0LDAtNTEuNDA5LTIyLjg3Ny04NC40NzYtMjIuMjc2Yy00My40NTgsMC42NDYtODMuNTI5LDI1LjI2OS0xMDUuOTA2LDY0LjE5ICAgYy00NS4xNTIsNzguMzUtMTEuNTYzLDE5NC40MiwzMi40NDUsMjU3Ljk2M2MyMS41MDQsMzEuMTA0LDQ3LjE0Niw2Ni4wMzgsODAuODEzLDY0Ljc5YzMyLjQyMS0xLjI5NCw0NC42ODEtMjAuOTc5LDgzLjg3OC0yMC45NzkgICBjMzkuMTk2LDAsNTAuMjE1LDIwLjk3OSw4NC41MjQsMjAuMzM1YzM0Ljg4OC0wLjY0OCw1Ni45OTEtMzEuNjk5LDc4LjM0Ny02Mi44OThjMjQuNjk0LTM2LjA4NCwzNC44NjItNzEuMDE5LDM1LjQ2Mi03Mi44MTIgICBDNDYzLjY3OCwzNzUuMjYsMzk2LjQyMiwzNDkuNDk1LDM5NS43NDgsMjcyLjA0NnogTTMzMS4yOCw4MS43NjFDMzQ5LjE0OSw2MC4wODIsMzYxLjIxLDMwLjAwNSwzNTcuOTIsMCAgIGMtMjUuNzM5LDEuMDQ4LTU2LjkzOCwxNy4xNDUtNzUuNDA1LDM4Ljc3NWMtMTYuNTcsMTkuMTg4LTMxLjA3NSw0OS44MTMtMjcuMTg4LDc5LjIxOCAgIEMyODQuMDYxLDEyMC4yMzUsMzEzLjM5MiwxMDMuMzkxLDMzMS4yOCw4MS43NjF6IiBmaWxsPSIjOTA5MDhhIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></u></span></li>
+                            <li><span class="code">cd ~</span> <span class="comm"> // pour revenir dans le dossier principal, <u>~ = alt + n pour <span class="os-logo apple-logo"></span></u></span></li>
                             <li><span class="code">pwd</span> <span class="comm"> // pour afficher le fil d'Ariane</span></li>
                             <li><span class="code">ls</span> <span class="comm"> // pour voir la liste des fichiers et dossiers dans le dossier courant</span></li>
-                            <li><span class="code">mkdir </span> <span class="cyan">nom_du_dossier</span> <span class="comm"> // pour créer un nouveau dossier</span></li>
-                            <li><span class="code">touch  </span> <span class="cyan">nom_du_fichier</span> <span class="comm"> // pour créer un nouveau fichier</span></li>
-                            <li><span class="code">cat </span> <span class="cyan">nom_du_fichier</span> <span class="comm"> // permet d'afficher le contenu d'un fichier</span></li>
-                            <li><span class="code">open </span> <span class="cyan">nom_du_fichier</span> <span class="comm"> // permet d'ouvrir le fichier</span></li>
-                            <li><span class="code">SHIFT + Insert</span> <span class="comm"> // sur windows permet de coller, <u>cmd ⌘ + v pour <img class="os-logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzk1Ljc0OCwyNzIuMDQ2Yy0wLjY0Ni02NC44NDEsNTIuODgtOTUuOTM4LDU1LjI3MS05Ny40ODNjLTMwLjA3NS00NC4wMS03Ni45MjUtNTAuMDM5LTkzLjYyLTUwLjczNiAgIGMtMzkuODcxLTQuMDM3LTc3Ljc5OCwyMy40NzQtOTguMDMzLDIzLjQ3NGMtMjAuMTg0LDAtNTEuNDA5LTIyLjg3Ny04NC40NzYtMjIuMjc2Yy00My40NTgsMC42NDYtODMuNTI5LDI1LjI2OS0xMDUuOTA2LDY0LjE5ICAgYy00NS4xNTIsNzguMzUtMTEuNTYzLDE5NC40MiwzMi40NDUsMjU3Ljk2M2MyMS41MDQsMzEuMTA0LDQ3LjE0Niw2Ni4wMzgsODAuODEzLDY0Ljc5YzMyLjQyMS0xLjI5NCw0NC42ODEtMjAuOTc5LDgzLjg3OC0yMC45NzkgICBjMzkuMTk2LDAsNTAuMjE1LDIwLjk3OSw4NC41MjQsMjAuMzM1YzM0Ljg4OC0wLjY0OCw1Ni45OTEtMzEuNjk5LDc4LjM0Ny02Mi44OThjMjQuNjk0LTM2LjA4NCwzNC44NjItNzEuMDE5LDM1LjQ2Mi03Mi44MTIgICBDNDYzLjY3OCwzNzUuMjYsMzk2LjQyMiwzNDkuNDk1LDM5NS43NDgsMjcyLjA0NnogTTMzMS4yOCw4MS43NjFDMzQ5LjE0OSw2MC4wODIsMzYxLjIxLDMwLjAwNSwzNTcuOTIsMCAgIGMtMjUuNzM5LDEuMDQ4LTU2LjkzOCwxNy4xNDUtNzUuNDA1LDM4Ljc3NWMtMTYuNTcsMTkuMTg4LTMxLjA3NSw0OS44MTMtMjcuMTg4LDc5LjIxOCAgIEMyODQuMDYxLDEyMC4yMzUsMzEzLjM5MiwxMDMuMzkxLDMzMS4yOCw4MS43NjF6IiBmaWxsPSIjOTA5MDhhIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></u></span></li>
-                            <li><span class="code">⌘+K <img class="os-logo" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBkPSJNMzk1Ljc0OCwyNzIuMDQ2Yy0wLjY0Ni02NC44NDEsNTIuODgtOTUuOTM4LDU1LjI3MS05Ny40ODNjLTMwLjA3NS00NC4wMS03Ni45MjUtNTAuMDM5LTkzLjYyLTUwLjczNiAgIGMtMzkuODcxLTQuMDM3LTc3Ljc5OCwyMy40NzQtOTguMDMzLDIzLjQ3NGMtMjAuMTg0LDAtNTEuNDA5LTIyLjg3Ny04NC40NzYtMjIuMjc2Yy00My40NTgsMC42NDYtODMuNTI5LDI1LjI2OS0xMDUuOTA2LDY0LjE5ICAgYy00NS4xNTIsNzguMzUtMTEuNTYzLDE5NC40MiwzMi40NDUsMjU3Ljk2M2MyMS41MDQsMzEuMTA0LDQ3LjE0Niw2Ni4wMzgsODAuODEzLDY0Ljc5YzMyLjQyMS0xLjI5NCw0NC42ODEtMjAuOTc5LDgzLjg3OC0yMC45NzkgICBjMzkuMTk2LDAsNTAuMjE1LDIwLjk3OSw4NC41MjQsMjAuMzM1YzM0Ljg4OC0wLjY0OCw1Ni45OTEtMzEuNjk5LDc4LjM0Ny02Mi44OThjMjQuNjk0LTM2LjA4NCwzNC44NjItNzEuMDE5LDM1LjQ2Mi03Mi44MTIgICBDNDYzLjY3OCwzNzUuMjYsMzk2LjQyMiwzNDkuNDk1LDM5NS43NDgsMjcyLjA0NnogTTMzMS4yOCw4MS43NjFDMzQ5LjE0OSw2MC4wODIsMzYxLjIxLDMwLjAwNSwzNTcuOTIsMCAgIGMtMjUuNzM5LDEuMDQ4LTU2LjkzOCwxNy4xNDUtNzUuNDA1LDM4Ljc3NWMtMTYuNTcsMTkuMTg4LTMxLjA3NSw0OS44MTMtMjcuMTg4LDc5LjIxOCAgIEMyODQuMDYxLDEyMC4yMzUsMzEzLjM5MiwxMDMuMzkxLDMzMS4yOCw4MS43NjF6IiBmaWxsPSIjOTA5MDhhIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /> clear
-                            <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDQ3NS4wODIgNDc1LjA4MiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDc1LjA4MiA0NzUuMDgyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSIwLDQwOS43MDUgMTk0LjcxNiw0MzYuNTQxIDE5NC43MTYsMjUwLjY3NyAwLDI1MC42NzcgICAiIGZpbGw9IiM5MDkwOGEiLz4KCQk8cG9seWdvbiBwb2ludHM9IjAsMjI2LjY5MiAxOTQuNzE2LDIyNi42OTIgMTk0LjcxNiwzOC41NDQgMCw2NS4zOCAgICIgZmlsbD0iIzkwOTA4YSIvPgoJCTxwb2x5Z29uIHBvaW50cz0iMjE2LjEyOSw0MzkuMzk4IDQ3NS4wODIsNDc1LjA4MiA0NzUuMDgyLDI1MC42NzcgNDc1LjA4MiwyNTAuNjc0IDIxNi4xMjksMjUwLjY3NCAgICIgZmlsbD0iIzkwOTA4YSIvPgoJCTxwb2x5Z29uIHBvaW50cz0iMjE2LjEzMiwzNS42ODggMjE2LjEzMiwyMjYuNjkyIDQ3NS4wODIsMjI2LjY5MiA0NzUuMDgyLDAgICAiIGZpbGw9IiM5MDkwOGEiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></span>
-                            <span class="comm"> // permet de clear le terminal</span></li>
+                            <li><span class="code">mkdir </span> <span class="name">nom_du_dossier</span> <span class="comm"> // pour créer un nouveau dossier</span></li>
+                            <li><span class="code">touch  </span> <span class="name">nom_du_fichier</span> <span class="comm"> // pour créer un nouveau fichier</span></li>
+                            <li><span class="code">cat </span> <span class="name">nom_du_fichier</span> <span class="comm"> // permet d'afficher le contenu d'un fichier</span></li>
+                            <li><span class="code">open </span> <span class="name">nom_du_fichier</span> <span class="comm"> // permet d'ouvrir le fichier</span></li>
+                            <li><span class="code">SHIFT + Insert</span> <span class="comm"> // sur windows permet de coller, <u>cmd ⌘ + v pour <span class="os-logo apple-logo"></span></u></span></li>
+                            <li><span class="code">⌘+K </span><span class="os-logo apple-logo"></span><span class="code">clear </span><span class="os-logo win-logo"></span><span class="comm"> // permet de clear le terminal</span></li>
                         </ul>
                         <h2>Commande base git</h2>
                         <ul>
-                            <li><span class="code">git config --global user.name </span><span class="yellow">"</span><span class="cyan">votre_nom</span><span class="yellow">"</span><span class="comm"> // pour définir le nom utilisé pour github.com</span></li>
-                            <li><span class="code">git config --global user.email </span><span class="yellow">"</span><span class="cyan">votre_email</span><span class="yellow">"</span><span class="comm"> // pour définir l'email utilisé pour github.com</span></li>
+                            <li><span class="code">git config --global user.name </span><span class="quote">"</span><span class="name">votre_nom</span><span class="quote">"</span><span class="comm"> // pour définir le nom utilisé pour github.com</span></li>
+                            <li><span class="code">git config --global user.email </span><span class="quote">"</span><span class="name">votre_email</span><span class="quote">"</span><span class="comm"> // pour définir l'email utilisé pour github.com</span></li>
                             <li><span class="code">git config user.name</span><span class="comm"> // permet de voir le nom utilisé pour github.com</span></li>
                             <li><span class="code">git config user.email</span><span class="comm"> // permet de voir l'email utilisé pour github.com</span></li>
                             <li><span class="code">git init</span> <span class="comm"> // permet d'initialiser le répertoire courant</span></li>
                             <li><span class="code">git status</span> <span class="comm"> // permet de savoir dans quel état le projet git se trouve</span></li>
-                            <li><span class="code">git add </span> <span class="cyan">nom_du_dossier_ou_nom_du_fichier</span> <span class="comm"> // permet d'ajouter à l'index les fichiers et dossiers ainsi que le contenu des dossiers</span></li>
+                            <li><span class="code">git add </span> <span class="name">nom_du_dossier_ou_nom_du_fichier</span> <span class="comm"> // permet d'ajouter à l'index les fichiers et dossiers ainsi que le contenu des dossiers</span></li>
                             <li><span class="code">git add .</span> <span class="comm"> // permet d'ajouter tous les fichiers et dossiers d'un coup</span></li>
-                            <li><span class="code">git commit --message </span><span class="yellow">"</span><span class="cyan">le_message</span><span class="code"></span><span class="yellow">"</span> <span class="comm"> // permet de commiter et d'ajouter un message au commit</span></li>
-                            <li><span class="code">git commit -m </span><span class="yellow">"</span><span class="cyan">le_message</span><span class="code"></span><span class="yellow">"</span> <span class="comm"> // raccourci de --message</span></li>
-                            <li><span class="code">git commit -am <span class="yellow">"</span> <span class="cyan">le_message</span><span class="code"><span class="yellow">"</span> <span class="comm"> // permet de mettre à jour les fichiers déjà existants dans son index</span></li>
-                            <li><span class="code">git log</span> <span class="comm"> // permet d'afficher l'historique des commits, q pour quitter log</span></li>
+                            <li><span class="code">git commit --message </span><span class="quote">"</span><span class="name">le_message</span><span class="code"></span><span class="quote">"</span> <span class="comm"> // permet de commiter et d'ajouter un message au commit</span></li>
+                            <li><span class="code">git commit -m </span><span class="quote">"</span><span class="name">le_message</span><span class="code"></span><span class="quote">"</span> <span class="comm"> // raccourci de --message</span></li>
+                            <li><span class="code">git commit -am <span class="quote">"</span> <span class="name">le_message</span><span class="code"><span class="quote">"</span> <span class="comm"> // permet de mettre à jour les fichiers déjà existants dans son index</span></li>
+                            <li><span class="code">git log</span> <span class="comm"> // permet d'afficher l'historique des commits, [ECHAP] puis q pour quitter log</span></li>
                             <li><span class="code">git lg</span> <span class="comm"> // raccourci de git log pour afficher l'historique des commits sous forme de branche (! ne fonctionne pas sur tous les terminaux)</span></li>
                             <li><span class="code">gitk</span> <span class="comm"> // comme git lg (fonctionne sur tous les OS)</span></li>
                             <li><span class="code">git diff</span> <span class="comm"> // permet d'afficher les différences dans la branche en cours</span></li>
-                            <li><span class="code">git diff </span><span class="cyan">branch_name..branch_name</span> <span class="comm"> // permet d'afficher les différences entre deux branches</span></li>
+                            <li><span class="code">git diff </span><span class="name">branch_name..branch_name</span> <span class="comm"> // permet d'afficher les différences entre deux branches</span></li>
                             <li><span class="code">git branch</span> <span class="comm"> // affiche la ou les branches du projet et permet de voir sur quelle branche on se trouve grâce à la petite étoile</span></li>
-                            <li><span class="code">git branch </span> <span class="cyan">nom_de_la_nouvelle_branche</span> <span class="comm"> // permet de créer une nouvelle branche dans le projet</span></li>
-                            <li><span class="code">git branch -d </span> <span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet de supprimer la branche appeler</span></li>
-                            <li><span class="code">git branch -D </span> <span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet de supprimer la branche appeler même si elle n'a pas été commiter merger</span></li>
-                            <li><span class="code">git checkout <span class="cyan">nom_de_la_branche</span></span> <span class="comm"> // permet de ce placer sur la branche au commit le plus récent</span></li>
-                            <li><span class="code">git checkout -b </span> <span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet de créer <u>ET</u> de rentrer dans la branche</span></li>
-                            <li><span class="code">git checkout </span><span class="cyan">SHA_du_commit</span> <span class="comm"> // permet de revenir au commit du SHA sélectionner</span></li>
+                            <li><span class="code">git branch </span> <span class="name">nom_de_la_nouvelle_branche</span> <span class="comm"> // permet de créer une nouvelle branche dans le projet</span></li>
+                            <li><span class="code">git branch -d </span> <span class="name">nom_de_la_branche</span> <span class="comm"> // permet de supprimer la branche appeler</span></li>
+                            <li><span class="code">git branch -D </span> <span class="name">nom_de_la_branche</span> <span class="comm"> // permet de supprimer la branche appeler même si elle n'a pas été commiter merger</span></li>
+                            <li><span class="code">git checkout <span class="name">nom_de_la_branche</span></span> <span class="comm"> // permet de ce placer sur la branche au commit le plus récent</span></li>
+                            <li><span class="code">git checkout -b </span> <span class="name">nom_de_la_branche</span> <span class="comm"> // permet de créer <u>ET</u> de rentrer dans la branche</span></li>
+                            <li><span class="code">git checkout </span><span class="name">SHA_du_commit</span> <span class="comm"> // permet de revenir au commit du SHA sélectionner</span></li>
                             <li><span class="code">git stash</span> <span class="comm"> // permet de sauvegarder temporairement en mémoire un fichier</span></li>
                             <li><span class="code">git stash pop</span> <span class="comm"> // permet de revenir sur le fichier sauvegarder temporairement</span></li>
                             <li><span class="code">git stash apply</span> <span class="comm"> // permet de garder les modifications du stash</span></li>
-                            <li><span class="code">git merge </span> <span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet de fusionner les branches</span></li>
-                            <li><span class="code">git merge --abort</span> <span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet d'avorter le merge précédent</span></li>
+                            <li><span class="code">git merge </span> <span class="name">nom_de_la_branche</span> <span class="comm"> // permet de fusionner les branches</span></li>
+                            <li><span class="code">git merge --abort</span> <span class="name">nom_de_la_branche</span> <span class="comm"> // permet d'avorter le merge précédent</span></li>
                             <li><span class="code">.gitignore</span> <span class="comm"> // permet de créer une liste afin d'ignorer des fichiers</span></li>
-                            <li><span class="code">git reset --hard </span><span class="cyan">SHA_du_commit</span> <span class="comm"> // permet de supprimer le merge contenant le SHA du commit</span></li>
-                            <li><span class="code">git blame </span> <span class="cyan">nom_du_fichier</span> <span class="comm"> // permet de voir quels sont les auteurs de chaque ligne d'un fichier dans un projet</span></li>
-                            <li><span class="code">git show </span> <span class="cyan">SHA_du_commit</span> <span class="comm"> // permet de voir les différence dans le fichier</span></li>
-                            <li><span class="code">git clone </span> <span class="cyan">url_du_clone</span> <span class="comm"> // permet de récupéré le clone du projet présent sur github</span></li>
-                            <li><span class="code">git push -u origin </span><span class="cyan">nom_de_la_branche</span> <span class="comm"> // permet d'envoyer les modifications de la branche sur le remote origin</span></li>
+                            <li><span class="code">git reset --hard </span><span class="name">SHA_du_commit</span> <span class="comm"> // permet de supprimer le merge contenant le SHA du commit</span></li>
+                            <li><span class="code">git blame </span> <span class="name">nom_du_fichier</span> <span class="comm"> // permet de voir quels sont les auteurs de chaque ligne d'un fichier dans un projet</span></li>
+                            <li><span class="code">git show </span> <span class="name">SHA_du_commit</span> <span class="comm"> // permet de voir les différence dans le fichier</span></li>
+                            <li><span class="code">git clone </span> <span class="name">url_du_clone</span> <span class="comm"> // permet de récupéré le clone du projet présent sur github</span></li>
+                            <li><span class="code">git push -u origin </span><span class="name">nom_de_la_branche</span> <span class="comm"> // permet d'envoyer les modifications de la branche sur le remote origin</span></li>
                             <li><span class="code">git pull origin master</span> <span class="comm"> // permet de récupéré uniquement les fichiers modifiés</span></li>
                         </ul>
                     </div><!-- /.blog-post -->
@@ -252,7 +92,7 @@
                     <div class="blog-post">
                         <h2 id="editeur" class="blog-post-title">Editeur VIM</h2>
                         <ul>
-                            <li><span class="code">vim </span> <span class="cyan">nom_du_fichier</span> <span class="comm"> // permet de rentrer dans le ficher et de l'éditer sans passer par un IDE</span></li>
+                            <li><span class="code">vim </span> <span class="name">nom_du_fichier</span> <span class="comm"> // permet de rentrer dans le ficher et de l'éditer sans passer par un IDE</span></li>
                             <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:w </span> <span class="comm"> // permet de sauvegarder</span></li>
                             <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:q </span> <span class="comm"> // permet de quitter vim</span></li>
                             <li><span class="blc">[ECHAP]</span> <span class="code">suivi de</span> <span class="magenta">:x</span> <span class="comm"> // permet de sauvegarder et de quitter vim en même temps</span></li>
@@ -265,18 +105,18 @@
                         <ul class="blog-post-envoi">
                             <li><span class="comm">Création en amont d'un repository sur github.com</span></li>
                             <li><span class="code">git init</span></li>
-                            <li><span class="code">git commit -m </span><span class="yellow">"</span><span class="cyan">le_message</span><span class="code"></span><span class="yellow">"</span></li>
-                            <li><span class="code">git remote add origin https://github.com/<span class="cyan">nom_du_profile</span>/<span class="cyan">nom_du_repository</span>.git</span></li>
+                            <li><span class="code">git commit -m </span><span class="quote">"</span><span class="name">le_message</span><span class="code"></span><span class="quote">"</span></li>
+                            <li><span class="code">git remote add origin https://github.com/<span class="name">nom_du_profile</span>/<span class="name">nom_du_repository</span>.git</span></li>
                             <li><span class="code">git push -u origin master</span></li>
                         </ul>
                         <ul class="blog-post">
                             <li><span class="comm">Depuis un projet existant</span></li>
-                            <li><span class="code">git remote add origin https://github.com/<span class="cyan">nom_du_profile</span>/<span class="cyan">nom_du_repository</span>.git</span></li>
+                            <li><span class="code">git remote add origin https://github.com/<span class="name">nom_du_profile</span>/<span class="name">nom_du_repository</span>.git</span></li>
                             <li><span class="code">git push -u origin master</span></li>
                         </ul>
                         <h3 id="clone" class="blog-post-title">Clone d'un projet</h3>
                         <ul class="blog-post">
-                            <li><span class="code">git clone </span> <span class="cyan">url_du_clone</span></li>
+                            <li><span class="code">git clone </span> <span class="name">url_du_clone</span></li>
                         </ul>
                         <h3 id="maj" class="blog-post-title">Mise à jour d'un projet depuis github</h3>
                         <ul class="blog-post">
@@ -284,7 +124,7 @@
                         </ul>
                         <h3 id="maj2" class="blog-post-title">Mise à jour d'un projet vers github</h3>
                         <ul class="blog-post">
-                            <li><span class="code">git commit -am <span class="yellow">"</span> <span class="cyan">message_du_commit_le_plus_détailler</span><span class="code"><span class="yellow">"</span></li>
+                            <li><span class="code">git commit -am <span class="quote">"</span> <span class="name">message_du_commit_le_plus_détailler</span><span class="code"><span class="quote">"</span></li>
                             <li><span class="code">git push origin master</span></li>
                         </ul>
                     </div><!-- /.blog-post -->
