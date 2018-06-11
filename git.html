@@ -96,6 +96,8 @@
                             <li><span class="code">git remote add origin https://<span class="name">nom_du_remote</span>/<span class="name">nom_du_profile</span>/<span class="name">nom_du_repository</span>.git</span><span class="comm"> // permet d'ajouté le repository local au repository dans le cloud</span></li>
                             <li><span class="code">git push -u origin</span><span class="name"> nom_de_la_branche</span><span class="comm"> // permet d'envoyer les modifications de la branche sur le remote origin</span></li>
                             <li><span class="code">git pull origin master</span><span class="comm"> // permet de récupéré uniquement les fichiers modifiés</span></li>
+                            <li><span class="code">git clone --bare https://github.com/<span class="name">exampleuser</span>/<span class="name">old-repository.git</span><span class="comm"> // permet de récupéré le clone du dossier .git du projet présent sur github</span></li>
+                            <li><span class="code">git push --mirror https://github.com/<span class="name">exampleuser</span>/<span class="name">new-repository.git</span><span class="comm"> // permet de renvoyer le clone du dossier .git du nouveau projet sur github</span></li>
                         </ul>
 
                 </div><!-- /.main -->
